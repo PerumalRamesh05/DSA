@@ -9,3 +9,14 @@
 /Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructure_Algoithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.AssemblyInfo.cs
 /Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructure_Algoithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.dll
 /Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructure_Algoithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.pdb
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/bin/Debug/netcoreapp3.1/BasicAlgorithms
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/bin/Debug/netcoreapp3.1/BasicAlgorithms.deps.json
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/bin/Debug/netcoreapp3.1/BasicAlgorithms.runtimeconfig.json
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/bin/Debug/netcoreapp3.1/BasicAlgorithms.runtimeconfig.dev.json
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/bin/Debug/netcoreapp3.1/BasicAlgorithms.dll
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/bin/Debug/netcoreapp3.1/BasicAlgorithms.pdb
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.csprojAssemblyReference.cache
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.AssemblyInfoInputs.cache
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.AssemblyInfo.cs
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.dll
+/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/obj/Debug/netcoreapp3.1/BasicAlgorithms.pdb

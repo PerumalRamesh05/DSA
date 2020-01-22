@@ -13,6 +13,27 @@ namespace BasicAlgorithms
                 RunSortTest();
             if (args != null && args.Length > 0 && args[0] == "binarySearch")
                 RunSearchTest();
+            if (args != null && args.Length > 0 && args[0] == "scoreboard")
+                RunScoreBoardTest();
+        }
+
+        private static void RunScoreBoardTest()
+        {
+            ScoreBoard sb = new ScoreBoard(6);
+            sb.add(new GameEntry { Name = "A", Score = 15 });
+            sb.add(new GameEntry { Name = "B", Score = 9 });
+            sb.add(new GameEntry { Name = "C", Score = 17 });
+            sb.add(new GameEntry { Name = "D", Score = 3 });
+            sb.add(new GameEntry { Name = "E", Score = 82 });
+            sb.add(new GameEntry { Name = "F", Score = 22 });
+            sb.add(new GameEntry { Name = "G", Score = 45 });
+
+            Console.WriteLine("Final List of GameEntries...");
+            foreach (var item in sb.ToGameEntryArray())
+            {
+                Console.WriteLine("Name :" + item.Name + " , " + "Score :" + item.Score);
+            }
+
         }
 
         private static void RunSearchTest()

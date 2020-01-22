@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructure_Algoithms/BasicAlgorithms/BasicAlgorithms.csproj",
+      "projectUniqueName": "/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/BasicAlgorithms.csproj",
       "projectName": "BasicAlgorithms",
-      "projectPath": "/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructure_Algoithms/BasicAlgorithms/BasicAlgorithms.csproj",
+      "projectPath": "/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/BasicAlgorithms.csproj",
       "packagesPath": "/Users/arangana/.nuget/packages/",
-      "outputPath": "/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructure_Algoithms/BasicAlgorithms/obj/",
+      "outputPath": "/Users/arangana/Desktop/Useful/SourceCode/anandr781-github/DataStructures_Algorithms/BasicAlgorithms/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
