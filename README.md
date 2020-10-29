@@ -46,7 +46,7 @@ For example Selection sort and Insertion Sort have O(n^2) time complexity.
           // some O(1) expressions
    }
 ```
-4) O(Logn) Time Complexity of a loop is considered as O(Logn) if the loop variables is divided / multiplied by a constant amount.
+4) __O(Logn)__ Time Complexity of a loop is considered as O(Logn) if the loop variables is divided / multiplied by a constant amount.
 For example Binary Search has O(Logn) time complexity. Let us see mathematically how it is O(Log n). The series that we get in first loop is 1, c, c2, c3, … ck. If we put k equals to Logcn, we get cLogcn which is n.
 
 ```java
