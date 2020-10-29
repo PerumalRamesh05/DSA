@@ -10,7 +10,7 @@ As an illustration, suppose that we are interested in the  properties of a funct
 Also, in Asymptotic analysis, we always talk about input sizes larger than a constant value. It might be possible that those large inputs are never given to your software and an algorithm which is asymptotically slower, always performs better for your particular situation. So, you may end up choosing an algorithm that is Asymptotically slower but faster for your software.
 
 ## Analysis of Loops 
-1) O(1): Time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain loop, recursion and call to any other non-constant time function.
+1) __O(1)__: Time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain loop, recursion and call to any other non-constant time function.
 
  ```java
   // Here c is a constant   
@@ -18,7 +18,7 @@ Also, in Asymptotic analysis, we always talk about input sizes larger than a con
         // some O(1) expressions
    }
 ```
-2) O(n): Time Complexity of a loop is considered as O(n) if the loop variables is incremented / decremented by a constant amount. For example following functions have O(n) time complexity.
+2) __O(n)__: Time Complexity of a loop is considered as O(n) if the loop variables is incremented / decremented by a constant amount. For example following functions have O(n) time complexity.
 
 ```java 
 // Here c is a positive integer constant   
@@ -31,7 +31,7 @@ Also, in Asymptotic analysis, we always talk about input sizes larger than a con
    }
 ```
 
-3. O(n^c): Time complexity of nested loops is equal to the number of times the innermost statement is executed. For example the following sample loops have O(n^2) time complexity.
+3. __O(n^c)__: Time complexity of nested loops is equal to the number of times the innermost statement is executed. For example the following sample loops have O(n^2) time complexity.
 For example Selection sort and Insertion Sort have O(n^2) time complexity.
 
 ```java 
@@ -58,7 +58,7 @@ For example Binary Search has O(Logn) time complexity. Let us see mathematically
    }
 ```
 
-5. O(LogLogn) Time Complexity of a loop is considered as O(LogLogn) if the loop variables is reduced / increased exponentially by a constant amount.
+5. __O(LogLogn)__: Time Complexity of a loop is considered as O(LogLogn) if the loop variables is reduced / increased exponentially by a constant amount.
 
 ```java
 // Here c is a constant greater than 1   
