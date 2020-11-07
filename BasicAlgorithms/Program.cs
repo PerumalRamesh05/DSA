@@ -7,14 +7,21 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            if (args != null && args.Length > 0 && args[0] == "basic")
-                RunBasicAlgorithmTest();
-            if (args != null && args.Length > 0 && args[0] == "sort")
-                RunSortTest();
-            if (args != null && args.Length > 0 && args[0] == "binarySearch")
-                RunSearchTest();
-            if (args != null && args.Length > 0 && args[0] == "scoreboard")
-                RunScoreBoardTest();
+            // if (args != null && args.Length > 0 && args[0] == "basic")
+            //     RunBasicAlgorithmTest();
+            // if (args != null && args.Length > 0 && args[0] == "sort")
+            //     RunSortTest();
+            // if (args != null && args.Length > 0 && args[0] == "binarySearch")
+            //     RunSearchTest();
+            // if (args != null && args.Length > 0 && args[0] == "scoreboard")
+            //     RunScoreBoardTest();
+
+            IList<KVPair<int, int>> results = new FindSumPairsInIntArray().doBruteForcedlogic(new int[] { 2, 4, 6, 3, 7 }, 9);
+
+            foreach (var item in results)
+            {
+                Console.WriteLine(item.ToString());
+            }
         }
 
         private static void RunScoreBoardTest()

@@ -1,0 +1,27 @@
+<svg fill="none" viewBox="0 0 1000 1000" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+<table border="1" cellpadding="3" cellspacing="0" ><tbody>
+<tr>       <td></td>        <td>Internal Implementation</td>        <td>Add/insert</td>        <td>Add beyond capacity</td>        <td>Queue/Push</td>        <td>Dequeue/         
+Pop/Peek</td>        <td>Remove/         
+  RemoveAt</td><td>Item[index]/ElementAt(index)</td><td>GetEnumerator</td><td>
+  Contains(value)
+  <br />
+  /IndexOf
+  <br />
+  /ContainsValue/Find
+  <br />
+</td></tr>
+<tr>       <td>List</td>        <td>Array</td>        <td>O(1) to add, O(n) to insert</td>        <td>O(n)</td>        <td>-</td>        <td>-</td>        <td>O(n)</td>        <td>O(1)</td>        <td>O(1)</td>        <td>O(n)</td>     </tr>
+<tr>       <td>LinkedList</td>        <td>Doubly linked list</td>        <td>O(1), before/after given node</td>        <td>O(1)</td>        <td>O(1)</td>        <td>O(1)</td>        <td>O(1), before/after given node</td>        <td>O(n)</td>        <td>O(1)</td>        <td>O(n)</td>     </tr>
+<tr>       <td>Stack</td>        <td>Array</td>        <td>O(1)</td>        <td>O(n)</td>        <td>O(1)</td>        <td>O(1)</td>        <td>-</td>        <td>-</td>        <td>O(1)</td>        <td>O(n)</td>     </tr>
+<tr>       <td>Queue</td>        <td>Array</td>        <td>O(1)</td>        <td>O(n)</td>        <td>O(1)</td>        <td>O(1)</td>        <td>-</td>        <td>-</td>        <td>O(1)</td>        <td>O(n)</td>     </tr>
+<tr>       <td>Dictionary</td>        <td>Hashtable with links to another array index for collision</td>        <td>O(1), O(n) if collision</td>        <td>O(n)</td>        <td>-</td>        <td>-</td>        <td>O(1), O(n) if collision</td>        <td>O(1), O(n) if collision</td>        <td>O(1)</td>        <td>O(n)</td>     </tr>
+<tr>       <td>HashSet</td>        <td>Hashtable with links to another array index for collision</td>        <td>O(1), O(n) if collision</td>        <td>O(n)</td>        <td>-</td>        <td>-</td>        <td>O(1), O(n) if collision</td>        <td>O(1), O(n) if collision</td>        <td>O(1)</td>        <td>-</td>     </tr>
+<tr>       <td>SortedDictionary</td>        <td>Red-black tree</td>        <td>O(log n)</td>        <td>O(log n)</td>        <td>-</td>        <td>-</td>        <td>O(log n)</td>        <td>O(log n)</td>        <td>O(log n)</td>        <td>O(n)</td>     </tr>
+<tr>       <td>SortedList</td>        <td>Array</td>        <td>O(n), O(log n) if added to end of list</td>        <td>O(n)</td>        <td>-</td>        <td>-</td>        <td>O(n)</td>        <td>O(log n)</td>        <td>O(1)</td>        <td>O(n)</td>     </tr>
+<tr>       <td>SortedSet</td>        <td>Red-black tree</td>        <td>O(log n)</td>        <td>O(log n)</td>        <td>-</td>        <td>-</td>        <td>O(log n)</td>        <td>O(log n)</td>        <td>O(log n)</td>        <td>-</td>     </tr>
+</tbody></table>
+</body>
+</foreignObject>
+</svg>
