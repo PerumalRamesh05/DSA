@@ -96,4 +96,3 @@ Deciding whether to implement the data structures myself or using the build-in c
 excerpt from [here](http://c-sharp-snippets.blogspot.com/2010/03/runtime-complexity-of-net-generic.html)
 
 ![](./timecomplexity_csharp.svg)
-f
