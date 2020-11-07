@@ -24,14 +24,22 @@ public class FindSumPairsInIntArray
     public IList<KVPair<int, int>> doHashSetBasedLogic(int[] array, int sum)
     {
         HashSet<int> tempStore = new HashSet<int>(array.Length);
+        IList<KVPair<int, int>> kvs = new List<KVPair<int, int>>();
 
-        foreach (var item in array)
+        int difference;
+        for (int i = 0; i < array.Length; i++)
         {
-            if(!tempStore.Contains(sum-item)){
-              
+            difference = sum - array[i];
+            if (!tempStore.Contains(difference))
+            {
+                tempStore.Add(array[i]);
+            }
+            else
+            {
+                kvs.Add(new KVPair<int, int>(array[i], difference));
             }
         }
-
+        return kvs;
     }
 }
 
