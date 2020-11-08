@@ -18,8 +18,7 @@ public class BubbleSort : ISort
             innerIterationCnt++;
             for (int j = i - 1; j >= 0; j--)
             {
-                ConsoleHelper.PrintArray(numbers);
-
+               
                 outerIterationCnt++;
                 if (numbers[i] < numbers[j])
                 {

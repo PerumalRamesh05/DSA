@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 
 public class FindSumPairsInIntArray
-{
+{  
     /// The time complexity is O(n^2) since of the loop-i and loop-j
     public IList<KVPair<int, int>> doBruteForcedlogic(int[] array, int sum)
     {
-        IList<KVPair<int, int>> kvs = null;
+        IList<KVPair<int, int>> kvs = null; 
         for (int i = 0; i < array.Length; i++)
         {
             for (int j = i + 1; j < array.Length; j++)
@@ -20,7 +20,7 @@ public class FindSumPairsInIntArray
         return kvs;
     }
 
-    /// Use HashSet to reduce Timecomplexity to ???
+    /// Use HashSet to reduce Timecomplexity to O(n)
     public IList<KVPair<int, int>> doHashSetBasedLogic(int[] array, int sum)
     {
         HashSet<int> tempStore = new HashSet<int>(array.Length);
