@@ -97,6 +97,7 @@ excerpt from [here](http://c-sharp-snippets.blogspot.com/2010/03/runtime-complex
 
 ![](https://github.com/anandr781/DSA/blob/master/C%23_Collections.png)
 
-## Sorting Algorithms Time complexities
+## Sorting Algorithms Time complexities in C
 
+This is a must [read](https://docs.microsoft.com/en-us/dotnet/standard/collections/)
 ![](https://github.com/anandr781/DSA/blob/master/Sorting%20Algorithm_TimeComplexity.png)
