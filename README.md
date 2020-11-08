@@ -96,3 +96,7 @@ Deciding whether to implement the data structures myself or using the build-in c
 excerpt from [here](http://c-sharp-snippets.blogspot.com/2010/03/runtime-complexity-of-net-generic.html)
 
 ![](https://github.com/anandr781/DSA/blob/master/C%23_Collections.png)
+
+## Sorting Algorithms Time complexities
+
+![](https://github.com/anandr781/DSA/blob/master/SortingAlgorithm_TimeComplexity.png)
