@@ -99,4 +99,5 @@ excerpt from [here](http://c-sharp-snippets.blogspot.com/2010/03/runtime-complex
 
 ## Sorting Algorithms Time complexities
 
-![](https://github.com/anandr781/DSA/blob/master/SortingAlgorithm_TimeComplexity.png)
+![](https://github.com/anandr781/DSA/blob/master/Sorting Algorithm_TimeComplexity.png
+)
