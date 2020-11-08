@@ -44,7 +44,9 @@ public class Train : ITrain
     public bool IsIntersection(ITrain train)
     {
         return (
-        train.arrival >= this.arrival && this.departure <= train.departure
+        train.arrival >= this.arrival &&
+        this.departure <= train.departure &&
+        train.arrival <= this.departure
         );
     }
 }
@@ -60,7 +62,7 @@ public class Platform
     {
         IList<ITrain> trains = BuildTrains(arrivals, departures);
         ITrain temp;
-        int counter = 0;
+        int counter = 1;
         for (int i = 0; i < trains.Count; i++)
         {
             temp = trains[i];
@@ -93,7 +95,14 @@ public class PlatformTester
         Platform platform = new Platform();
         int count =
             platform
-                .GetPlatformCount(new float[] {9.0F, 9.4F,9.5F,11F,15F,18F},
+                .GetPlatformCount(new float[] {
+                    9.0F,
+                    9.4F,
+                    9.5F,
+                    11F,
+                    15F,
+                    18F
+                },
                 new float[] { 9.1F, 12F, 11.2F, 11.3F, 19F, 20F });
         return count;
     }
