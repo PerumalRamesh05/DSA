@@ -1,3 +1,4 @@
+// This is a close relative of merge sort algorithm where we recursively sort first before merge .
 public class RecursiveBinary
 {
     int[] numbers = new int[] { 2, 7, 11, 24, 35, 46, 59, 72, 89, 90, 95, 98, 99 }; //For BinarySearch to work the collection needs to be sorted that is a pre-req.
