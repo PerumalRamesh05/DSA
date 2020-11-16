@@ -24,8 +24,14 @@ namespace BasicAlgorithms
             // {
             //     Console.WriteLine(item.ToString());
             // }
-            Console.Write(new PlatformTester().TestPlatformCounter());
+            
+            /******************************** Test For LeetCode ************************/
+            // Console.Write(new PlatformTester().TestPlatformCounter());
             //Console.Write(new StringHasAllUniqueChars().doesStringAllUniqueCharacters("DNA"));
+
+            /******************************** Tree Traversal ****************************/
+            new TreeTraversal().LoadTestData(); 
+
         }
 
         private static void RunScoreBoardTest()
