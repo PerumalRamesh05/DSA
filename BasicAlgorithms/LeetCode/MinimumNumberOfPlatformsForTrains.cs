@@ -60,19 +60,29 @@ public class Platform
 {
     public int GetPlatformCount(float[] arrivals, float[] departures)
     {
-        IList<ITrain> trains = BuildTrains(arrivals, departures);
-        ITrain temp;
+       IList<ITrain> trains = BuildTrains(arrivals, departures);
+       
         int counter = 1;
-        for (int i = 0; i < trains.Count; i++)
+        int i=0;
+        //--------------> Commenting out this exponential logic (that is do 'j') we don't need to do this if the array is sorted 
+        // for (int i = 0; i < trains.Count; i++)
+        // {
+        //     temp = trains[i];
+        //     int j = i + 1;
+        //     while (j < trains.Count)
+        //     {
+        //         counter += temp.IsIntersection(trains[j]) ? 1 : 0;
+        //         j++;
+        //     }
+        // }
+
+        // -----------> This is possible if the input arrivals , departures sorted . Secondly, we can avoid one predicate condition due to the for-loop.
+        while (i+1 < trains.Count )
         {
-            temp = trains[i];
-            int j = i + 1;
-            while (j < trains.Count)
-            {
-                counter += temp.IsIntersection(trains[j]) ? 1 : 0;
-                j++;
-            }
+            counter += trains[i].IsIntersection(trains[i+1]) ? 1 :0 ;
+            i+=1; 
         }
+       
         return counter;
     }
 
