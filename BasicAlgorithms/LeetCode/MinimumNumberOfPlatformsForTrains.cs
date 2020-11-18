@@ -13,6 +13,8 @@ We are given two arrays which represent arrival and departure times of trains th
     dep[] = {9:10, 12:00}
     Output: 1
     Explantion: Only one platform is needed.
+    
+    Solution : Greedy Algorithm !! that will check for sorting (an important precondition) 
 **/
 using System;
 using System.Collections.Generic;
