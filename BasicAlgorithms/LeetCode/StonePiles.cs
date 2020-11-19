@@ -26,7 +26,7 @@ public class GameOperation
 
     public GameOperation(int[] stonePiles)
     {
-        System.Array.Sort(stonePiles);
+        System.Array.Sort(stonePiles); //Never do business logic in c'tor only and always assignments !!!!!
         originalStonePiles = new List<int>(stonePiles);
     }
 
