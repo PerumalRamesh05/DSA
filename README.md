@@ -106,6 +106,8 @@ ___Microsoft's explanation of its Generic data structures - [link](https://docs.
 
 =============================================================================
 
+## Time Complexity 
+
 What is Time Complexity?
 Time complexity of an algorithm signifies the total time required by the program to run till its completion.
 
