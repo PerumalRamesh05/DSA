@@ -95,7 +95,7 @@ Deciding whether to implement the data structures myself or using the build-in c
 
 excerpt from [here](http://c-sharp-snippets.blogspot.com/2010/03/runtime-complexity-of-net-generic.html)
 
-Microsoft's explanation of its Generic data structures - [link](https://docs.microsoft.com/en-us/dotnet/standard/collections/)
+___Microsoft's explanation of its Generic data structures - [link](https://docs.microsoft.com/en-us/dotnet/standard/collections/)
 
 ![](https://github.com/anandr781/DSA/blob/master/C%23_Collections.png)
 
