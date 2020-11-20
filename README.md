@@ -106,3 +106,63 @@ ___Microsoft's explanation of its Generic data structures - [link](https://docs.
 
 =============================================================================
 
+What is Time Complexity?
+Time complexity of an algorithm signifies the total time required by the program to run till its completion.
+
+The time complexity of algorithms is most commonly expressed using the big O notation. It's an asymptotic notation to represent the time complexity. We will study about it in detail in the next tutorial.
+
+Time Complexity is most commonly estimated by counting the number of elementary steps performed by any algorithm to finish execution. Like in the example above, for the first code the loop will run n number of times, so the time complexity will be n atleast and as the value of n will increase the time taken will also increase. While for the second code, time complexity is constant, because it will never be dependent on the value of n, it will always give the result in 1 step.
+
+And since the algorithm's performance may vary with different types of input data, hence for an algorithm we usually use the worst-case Time complexity of an algorithm because that is the maximum time taken for any input size.
+
+Calculating Time Complexity
+Now lets tap onto the next big topic related to Time complexity, which is How to Calculate Time Complexity. It becomes very confusing some times, but we will try to explain it in the simplest way.
+
+Now the most common metric for calculating time complexity is Big O notation. This removes all constant factors so that the running time can be estimated in relation to N, as N approaches infinity. In general you can think of it like this :
+
+statement;
+Above we have a single statement. Its Time Complexity will be Constant. The running time of the statement will not change in relation to N.
+
+```java
+for(i=0; i < N; i++)
+{
+    statement;
+}
+```
+The time complexity for the above algorithm will be Linear. The running time of the loop is directly proportional to N. When N doubles, so does the running time.
+
+```java
+for(i=0; i < N; i++) 
+{
+    for(j=0; j < N;j++)
+    { 
+    statement;
+    }
+}
+```
+This time, the time complexity for the above code will be Quadratic. The running time of the two loops is proportional to the square of N. When N doubles, the running time increases by N * N.
+
+```java
+while(low <= high) 
+{
+    mid = (low + high) / 2;
+    if (target < list[mid])
+        high = mid - 1;
+    else if (target > list[mid])
+        low = mid + 1;
+    else break;
+}
+```
+This is an algorithm to break a set of numbers into halves, to search a particular field(we will study this in detail later). Now, this algorithm will have a Logarithmic Time Complexity. The running time of the algorithm is proportional to the number of times N can be divided by 2(N is high-low here). This is because the algorithm divides the working area in half with each iteration.
+
+```java
+void quicksort(int list[], int left, int right)
+{
+    int pivot = partition(list, left, right);
+    quicksort(list, left, pivot - 1);
+    quicksort(list, pivot + 1, right);
+}
+
+Taking the previous algorithm forward, above we have a small logic of Quick Sort(we will study this in detail later). Now in Quick Sort, we divide the list into halves every time, but we repeat the iteration N times(where N is the size of list). Hence time complexity will be N*log( N ). The running time consists of N loops (iterative or recursive) that are logarithmic, thus the algorithm is a combination of linear and logarithmic.
+
+NOTE: In general, doing something with every item in one dimension is linear, doing something with every item in two dimensions is quadratic, and dividing the working area in half is logarithmic.
