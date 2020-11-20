@@ -95,9 +95,14 @@ Deciding whether to implement the data structures myself or using the build-in c
 
 excerpt from [here](http://c-sharp-snippets.blogspot.com/2010/03/runtime-complexity-of-net-generic.html)
 
+Microsoft's explanation of its Generic data structures - [link](https://docs.microsoft.com/en-us/dotnet/standard/collections/)
+
 ![](https://github.com/anandr781/DSA/blob/master/C%23_Collections.png)
 
 ## Sorting Algorithms Time complexities in C
 
-This is a must [read](https://docs.microsoft.com/en-us/dotnet/standard/collections/)
 ![](https://github.com/anandr781/DSA/blob/master/Sorting%20Algorithm_TimeComplexity.png)
+
+
+=============================================================================
+
