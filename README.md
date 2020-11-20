@@ -131,7 +131,7 @@ for(i=0; i < N; i++)
     statement;
 }
 ```
-The time complexity for the above algorithm will be Linear. The running time of the loop is directly proportional to N. When N doubles, so does the running time.
+The time complexity for the above algorithm will be __Linear__. The running time of the loop is directly proportional to N. When N doubles, so does the running time.
 
 ```java
 for(i=0; i < N; i++) 
@@ -142,7 +142,7 @@ for(i=0; i < N; i++)
     }
 }
 ```
-This time, the time complexity for the above code will be Quadratic. The running time of the two loops is proportional to the square of N. When N doubles, the running time increases by N * N.
+This time, the time complexity for the above code will be __Quadratic__. The running time of the two loops is proportional to the square of N. When N doubles, the running time increases by N * N.
 
 ```java
 while(low <= high) 
@@ -155,7 +155,7 @@ while(low <= high)
     else break;
 }
 ```
-This is an algorithm to break a set of numbers into halves, to search a particular field(we will study this in detail later). Now, this algorithm will have a Logarithmic Time Complexity. The running time of the algorithm is proportional to the number of times N can be divided by 2(N is high-low here). This is because the algorithm divides the working area in half with each iteration.
+This is an algorithm to break a set of numbers into halves, to search a particular field(we will study this in detail later). Now, this __algorithm will have a Logarithmic Time Complexity__ . The running time of the algorithm is proportional to the number of times N can be divided by 2(N is high-low here). This is because the algorithm divides the working area in half with each iteration.
 
 ```java
 void quicksort(int list[], int left, int right)
@@ -166,6 +166,6 @@ void quicksort(int list[], int left, int right)
 }
 
 ``` 
-Taking the previous algorithm forward, above we have a small logic of Quick Sort(we will study this in detail later). Now in Quick Sort, we divide the list into halves every time, but we repeat the iteration N times(where N is the size of list). Hence time complexity will be N*log( N ). The running time consists of N loops (iterative or recursive) that are logarithmic, thus the algorithm is a combination of linear and logarithmic.
+__Taking the previous algorithm forward, above we have a small logic of Quick Sort(we will study this in detail later). Now in Quick Sort, we divide the list into halves every time, but we repeat the iteration N times(where N is the size of list). Hence time complexity will be N*log( N ). The running time consists of N loops (iterative or recursive) that are logarithmic, thus the algorithm is a combination of linear and logarithmic.__
 
-NOTE: In general, doing something with every item in one dimension is linear, doing something with every item in two dimensions is quadratic, and dividing the working area in half is logarithmic.
+##NOTE**: In general, doing something with every item in __one dimension is linear__, doing something with every item in __two dimensions is quadratic__, and __dividing the working area in half is logarithmic__.
