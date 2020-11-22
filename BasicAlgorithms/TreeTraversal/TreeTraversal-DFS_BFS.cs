@@ -1,26 +1,11 @@
 using System.Collections.Generic;
 
-public interface INode<T>
-{
-    INode<T> RightNode { get; set; }
-    INode<T> LeftNode { get; set; }
-    T Value { get; set; }
-}
-public class Node<T> : INode<T>
-{
-
-    public INode<T> LeftNode { get; set; }
-    public INode<T> RightNode { get; set; }
-
-    public T Value { get; set; }
-
-}
-
 public class TreeTraversal
 {
     public void LoadTestData()
     {
         IDictionary<string, string[]> data = new Dictionary<string, string[]>();
+        
 
         AddSyntheticHRData(data);
 
@@ -40,6 +25,8 @@ public class TreeTraversal
         data.Add("Mathieu", new string[2] { "Kamel", "Nagendran" });
         data.Add("Vikas", new string[] { "Nithy", "Karthi" });
     }
+
+    //See Tree.cs for elegant - LevelOrderLoading of a tree
     public Node<string> BuildTreeStruct(IDictionary<string, string[]> data)
     {
         IEnumerator<KeyValuePair<string, string[]>> enumerator = data.GetEnumerator();
@@ -68,6 +55,7 @@ public class TreeTraversal
 
     #region "Do Depth First"
 
+   // Depth first is FIFO based - So we use Stacks 
     public void DoDepthFirst(Node<string> tree)
     {
         Stack<INode<string>> stack = new Stack<INode<string>>();
@@ -97,6 +85,7 @@ public class TreeTraversal
 
     #region "Do Breadth First"
 
+   // Breadth first is LIFO based - So we use Queues 
     public void DoBreadthFirst(Node<string> tree)
     {
         Queue<INode<string>> queue = new Queue<INode<string>>();
