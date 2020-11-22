@@ -10,12 +10,11 @@ public interface INode<T>
 }
 public class Node<T> : INode<T>
 {
-
     public Node(T value)
     {
         Value = value;
     }
-    public Node() {}
+    public Node() { }
     public INode<T> LeftNode { get; set; }
     public INode<T> RightNode { get; set; }
 
@@ -29,45 +28,80 @@ public class Tree<T>
 
     //This is  Level Order Technique of traversal and loading a tree from an array . 
     //The key is 2*i+1 and 2*1 +2 which basically moves every node to its left and right by 2 points (its binary after all !)
-    public INode<int?> LevelOrderTreeLoad(int?[] arr, INode<int?> root, int index)
+    public INode<int?> LevelOrderTreeLoad(int?[] arr, int index)
     {
         if (index < arr.Length)
         {
             INode<int?> temp = new Node<int?>(arr[index]);
-            root = temp;
 
-           root.LeftNode = LevelOrderTreeLoad(arr, root.LeftNode, (2 * index) + 1);
-           root.RightNode= LevelOrderTreeLoad(arr, root.RightNode, (2 * index) + 2);
-
+            temp.LeftNode = LevelOrderTreeLoad(arr, (2 * index) + 1);
+            temp.RightNode = LevelOrderTreeLoad(arr, (2 * index) + 2);
+            return temp;
         }
-        return root;
+        return null;
     }
 
     public IList<IList<int?>> LevelOrderReading(INode<int?> root)
     {
-        IList<IList<int?>> final = new List<IList<int?>>();
+        List<IList<int?>> final = new List<IList<int?>>();
 
         if (root != null)
         {
             final.Add(new List<int?>() { root.Value });
         }
+        //no recursion -> just read children.Value before recursing
+        final.Add(ReadNodeLeftRightValue(root));
 
-        final.Add(LevelOrderRead(root.LeftNode));
-        final.Add(LevelOrderRead(root.RightNode));
-    
+        IList<IList<int?>> candidates = LevelOrderRead(root); //now start recurse 
+        if (candidates.Count > 0)
+            final.AddRange(candidates);
         return final;
 
     }
 
-    IList<int?> LevelOrderRead(INode<int?> node)
+    IList<IList<int?>> LevelOrderRead(INode<int?> node)
     {
-        List<int?> final = new List<int?>();
+        List<IList<int?>> final = new List<IList<int?>>();
+        if (node == null)
+            return final;
 
-        final.AddRange(LevelOrderRead(node.LeftNode));
-        final.AddRange(LevelOrderRead(node.RightNode));
+        List<int?> results = new List<int?>();
+
+        //no recursion -> just read children.Value before recursing
+        if (node.LeftNode != null)
+            results.AddRange(ReadNodeLeftRightValue(node.LeftNode));
+        if (node.RightNode != null)
+            results.AddRange(ReadNodeLeftRightValue(node.RightNode));
+
+        if (results.Count > 0)
+            final.Add(results);
+
+        IList<IList<int?>> candidates = LevelOrderRead(node.LeftNode); //now recurse
+        if (candidates.Count > 0)
+            final.AddRange(candidates);
+
+        candidates = LevelOrderRead(node.RightNode); //now recurse
+        if (candidates.Count > 0)
+            final.AddRange(LevelOrderRead(node.RightNode));
 
         return final;
     }
+    IList<int?> ReadNodeLeftRightValue(INode<int?> node)
+    {
+        IList<int?> final = new List<int?>();
+
+        if (node != null)
+        {
+            if (node.LeftNode != null)
+                final.Add(node.LeftNode.Value);
+
+            if (node.RightNode != null)
+                final.Add(node.RightNode.Value);
+
+        }
+        return final;
+    }
+
 }
 
 
@@ -87,8 +121,18 @@ public class TreeLoading_Tests
     public void LevelOrderTreeLoad_test()
     {
         Tree<int?> tree = new Tree<int?>();
-        tree.Root = tree.LevelOrderTreeLoad(input , tree.Root, 0);
-        Assert.That(tree.Root != null && tree.Root.LeftNode.Value ==3 && tree.Root.RightNode.Value ==20, "Worked");
+        tree.Root = tree.LevelOrderTreeLoad(input, 0);
+        Assert.That(tree.Root != null && tree.Root.LeftNode.Value == 9 && tree.Root.RightNode.Value == 20, "Worked");
     }
 
+    [Test]
+    public void LevelOrderRead_test()
+    {
+        Tree<int?> tree = new Tree<int?>();
+        tree.Root = tree.LevelOrderTreeLoad(input,  0);
+        IList<IList<int?>> results = tree.LevelOrderReading(tree.Root);
+        Assert.That(results != null, "Worked");
+    }
+
+     
 }

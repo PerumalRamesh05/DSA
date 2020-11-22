@@ -26,7 +26,7 @@ public class TreeTraversal
         data.Add("Vikas", new string[] { "Nithy", "Karthi" });
     }
 
-    //See Tree.cs for elegant - LevelOrderLoading of a tree
+    //This is a mere bruteforce ugly loading . See Tree.cs for elegant - LevelOrderLoading of a tree
     public Node<string> BuildTreeStruct(IDictionary<string, string[]> data)
     {
         IEnumerator<KeyValuePair<string, string[]>> enumerator = data.GetEnumerator();
